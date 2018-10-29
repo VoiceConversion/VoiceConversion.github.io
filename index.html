@@ -1,0 +1,899 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Samples for Attention-Based WaveNet Autoencoder for Universal Voice Conversion</title>
+    <style type="text/css">
+body, input, select, td, li, div, textarea, p {
+	font-size: 14px;
+	line-height: 16px;
+	font-family: verdana, arial, sans-serif;
+}
+
+body {
+	margin:5px;
+	background-color:white;
+}
+
+h1 {
+	font-size:16px;
+	font-weight:bold;
+}
+
+h2 {
+	font-size:14px;
+	font-weight:bold;
+}
+    </style>
+  </head>
+
+  <body>
+    <h1 align="center"> Samples for Attention-Based WaveNet Autoencoder for Universal Voice Conversion </h1>
+    <h1>I. Samples on Trained Speakers  without attention</h1>
+    <p> Each example is a different source domain (speaker).
+        Each column is a different target speaker.
+        The red columns are original through the encoder and the decoder of the same speaker.</p>
+
+    <h2>Example for source speaker: Blizzard 2013 </h2>
+    <div>
+      <table border = "1" class="inlineTable">
+        <col width="50">
+
+        <col width="200">
+
+        <col width="200">
+
+        <col width="200">
+
+        <col width="200">
+
+        <tr>
+          <th/>
+          <th/>
+          <th colspan="6">Target</th>
+        </tr>
+        <tr>
+             <th/>
+             <th>Original</th>
+
+             <th>Blizzard 2013</th>
+
+             <th>Blizzard 2011</th>
+
+             <th>LJ</th>
+        </tr>
+
+        <tr>
+           <th> 1 </th>
+           <td>
+             <audio controls style="width: 200px;">
+               <source src=all/1/0.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+           <td bgcolor="#FF0000">
+             <audio controls style="width: 200px;">
+               <source src=all/1/0_1.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+             <audio controls style="width: 200px;">
+               <source src=all/1/0_2.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+           <td>
+            <audio controls style="width: 200px;">
+              <source src=all/1/0_3.wav type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+          </td>
+        </tr>
+
+        <tr>
+          <th> 2 </th>
+           <td>
+
+             <audio controls style="width: 200px;">
+               <source src=all/1/1.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+            <td bgcolor="#FF0000">
+             <audio controls style="width: 200px;">
+               <source src=all/1/1_1.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+
+             <audio controls style="width: 200px;">
+               <source src=all/1/1_2.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+           <td>
+            <audio controls style="width: 200px;">
+              <source src=all/1/1_3.wav type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+           </td>
+        </tr>
+
+      </table>
+    </div>
+
+    <h2>Example for source speaker: Blizzard 2011 </h2>
+    <div>
+      <table border = "1" class="inlineTable">
+        <col width="50">
+
+        <col width="200">
+
+        <col width="200">
+
+        <col width="200">
+
+        <col width="200">
+
+        <tr>
+          <th/>
+          <th/>
+          <th colspan="6">Target</th>
+        </tr>
+        <tr>
+             <th/>
+             <th>Original</th>
+
+             <th>Blizzard 2013</th>
+
+             <th>Blizzard 2011</th>
+
+             <th>LJ</th>
+        </tr>
+
+        <tr>
+           <th> 3 </th>
+           <td>
+             <audio controls style="width: 200px;">
+               <source src=all/2/0.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+           <td>
+             <audio controls style="width: 200px;">
+               <source src=all/2/0_1.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td bgcolor="#FF0000">
+             <audio controls style="width: 200px;">
+               <source src=all/2/0_2.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+           <td>
+            <audio controls style="width: 200px;">
+              <source src=all/2/0_3.wav type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+          </td>
+        </tr>
+
+        <tr>
+          <th> 4 </th>
+           <td>
+
+             <audio controls style="width: 200px;">
+               <source src=all/2/1.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+            <td>
+             <audio controls style="width: 200px;">
+               <source src=all/2/1_1.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td  bgcolor="#FF0000">
+             <audio controls style="width: 200px;">
+               <source src=all/2/1_2.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+           <td>
+            <audio controls style="width: 200px;">
+              <source src=all/2/1_3.wav type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+           </td>
+        </tr>
+
+      </table>
+    </div>
+
+    <h2>Example for source speaker: LJ </h2>
+    <div>
+      <table border = "1" class="inlineTable">
+        <col width="50">
+
+        <col width="200">
+
+        <col width="200">
+
+        <col width="200">
+
+        <col width="200">
+
+        <tr>
+          <th/>
+          <th/>
+          <th colspan="6">Target</th>
+        </tr>
+        <tr>
+             <th/>
+             <th>Original</th>
+
+             <th>Blizzard 2013</th>
+
+             <th>Blizzard 2011</th>
+
+             <th>LJ</th>
+        </tr>
+
+        <tr>
+           <th> 5 </th>
+           <td>
+             <audio controls style="width: 200px;">
+               <source src=all/3/0.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+           <td>
+             <audio controls style="width: 200px;">
+               <source src=all/3/0_1.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+             <audio controls style="width: 200px;">
+               <source src=all/3/0_2.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+           <td bgcolor="#FF0000">
+            <audio controls style="width: 200px;">
+              <source src=all/3/0_3.wav type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+          </td>
+        </tr>
+
+        <tr>
+          <th> 6 </th>
+           <td>
+
+             <audio controls style="width: 200px;">
+               <source src=all/3/1.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+            <td>
+             <audio controls style="width: 200px;">
+               <source src=all/3/1_1.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+             <audio controls style="width: 200px;">
+               <source src=all/3/1_2.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+           <td bgcolor="#FF0000">
+            <audio controls style="width: 200px;">
+              <source src=all/3/1_3.wav type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+           </td>
+        </tr>
+
+      </table>
+    </div>
+
+    <br/>
+    <br/>
+    <h1>II. Samples from unseen speaker (TTS)</h1>
+    <p> The input speaker is a TTS speaker.
+        Samples are generated using our method with and without the attention mechanism.
+      </p>
+
+    <h2>Example for target speaker: Blizzard 2013 </h2>
+    <div>
+
+      <table border = "1" class="inlineTable">
+        <col width="50">
+
+        <col width="200">
+
+        <col width="200">
+
+        <col width="200">
+
+        <tr>
+           <th rowspan="4"> 7 </th>
+           <th>Ground Truth</th>
+           <td>
+            <audio controls style="width: 200px;">
+              <source src=gt/CA-BB-21-23.wav type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+           </td>
+           <td>
+             <img src="gt/CA-BB-21-23.png"  style="width:700px;height:100px">
+           </td>
+        </tr>
+         <tr>
+           <th>Robot (TTS)</th>
+           <td>
+              <audio controls style="width: 200px;">
+                <source src=robot/CA-BB-21-23.wav type="audio/wav">
+                Your browser does not support the audio element.
+              </audio>
+            </td>
+            <td>
+              <img src="robot/CA-BB-21-23.png"  style="width:700px;height:100px">
+            </td>
+        </tr>
+        <tr>
+          <th>Ours (no attention)</th>
+          <td>
+            <audio controls style="width: 200px;">
+              <source src=no_attn/CA-BB-21-23.wav type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+          </td>
+          <td>
+            <img src="no_attn/CA-BB-21-23.png"  style="width:700px;height:100px">
+          </td>
+        </tr>
+        <tr>
+          <th>Ours (with attention)</th>
+          <td>
+           <audio controls style="width: 200px;">
+             <source src=attn/CA-BB-21-23.wav type="audio/wav">
+             Your browser does not support the audio element.
+           </audio>
+         </td>
+         <td>
+           <img src="attn/CA-BB-21-23.png"  style="width:700px;height:100px">
+         </td>
+        </tr>
+      </table>
+
+      </br>
+
+      <table border = "1" class="inlineTable">
+        <col width="50">
+
+        <col width="200">
+
+        <col width="200">
+
+        <col width="200">
+
+        <tr>
+           <th rowspan="4"> 8 </th>
+           <th>Ground Truth</th>
+           <td>
+            <audio controls style="width: 200px;">
+              <source src=gt/CA-BB-25-07.wav type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+           </td>
+           <td>
+             <img src="gt/CA-BB-25-07.png"  style="width:700px;height:100px">
+           </td>
+        </tr>
+         <tr>
+           <th>Robot (TTS)</th>
+           <td>
+              <audio controls style="width: 200px;">
+                <source src=robot/CA-BB-25-07.wav type="audio/wav">
+                Your browser does not support the audio element.
+              </audio>
+            </td>
+            <td>
+              <img src="robot/CA-BB-25-07.png"  style="width:700px;height:100px">
+            </td>
+        </tr>
+        <tr>
+          <th>Ours (no attention)</th>
+          <td>
+            <audio controls style="width: 200px;">
+              <source src=no_attn/CA-BB-25-07.wav type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+          </td>
+          <td>
+            <img src="no_attn/CA-BB-25-07.png"  style="width:700px;height:100px">
+          </td>
+        </tr>
+        <tr>
+          <th>Ours (with attention)</th>
+          <td>
+           <audio controls style="width: 200px;">
+             <source src=attn/CA-BB-25-07.wav type="audio/wav">
+             Your browser does not support the audio element.
+           </audio>
+         </td>
+         <td>
+           <img src="attn/CA-BB-25-07.png"  style="width:700px;height:100px">
+         </td>
+        </tr>
+      </table>
+
+      </br>
+
+      <table border = "1" class="inlineTable">
+        <col width="50">
+
+        <col width="200">
+
+        <col width="200">
+
+        <col width="200">
+
+        <tr>
+           <th rowspan="4"> 9 </th>
+           <th>Ground Truth</th>
+           <td>
+            <audio controls style="width: 200px;">
+              <source src=gt/CA-BB-29-75.wav type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+           </td>
+           <td>
+             <img src="gt/CA-BB-29-75.png"  style="width:700px;height:100px">
+           </td>
+        </tr>
+         <tr>
+           <th>Robot (TTS)</th>
+           <td>
+              <audio controls style="width: 200px;">
+                <source src=robot/CA-BB-29-75.wav type="audio/wav">
+                Your browser does not support the audio element.
+              </audio>
+            </td>
+            <td>
+              <img src="robot/CA-BB-29-75.png"  style="width:700px;height:100px">
+            </td>
+        </tr>
+        <tr>
+          <th>Ours (no attention)</th>
+          <td>
+            <audio controls style="width: 200px;">
+              <source src=no_attn/CA-BB-29-75.wav type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+          </td>
+          <td>
+            <img src="no_attn/CA-BB-29-75.png"  style="width:700px;height:100px">
+          </td>
+        </tr>
+        <tr>
+          <th>Ours (with attention)</th>
+          <td>
+           <audio controls style="width: 200px;">
+             <source src=attn/CA-BB-29-75.wav type="audio/wav">
+             Your browser does not support the audio element.
+           </audio>
+         </td>
+         <td>
+           <img src="attn/CA-BB-29-75.png"  style="width:700px;height:100px">
+         </td>
+        </tr>
+      </table>
+
+    <h2>Example for target speaker: Blizzard 2011 </h2>
+    <div>
+
+      <table border = "1" class="inlineTable">
+        <col width="50">
+
+        <col width="200">
+
+        <col width="200">
+
+        <col width="200">
+
+        <tr>
+           <th rowspan="4"> 10 </th>
+           <th>Ground Truth</th>
+           <td>
+            <audio controls style="width: 200px;">
+              <source src=gt/NYT038-011-01.wav type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+           </td>
+           <td>
+             <img src="gt/NYT038-011-01.png"  style="width:700px;height:100px">
+           </td>
+        </tr>
+         <tr>
+           <th>Robot (TTS)</th>
+           <td>
+              <audio controls style="width: 200px;">
+                <source src=robot/NYT038-011-01.wav type="audio/wav">
+                Your browser does not support the audio element.
+              </audio>
+            </td>
+            <td>
+              <img src="robot/NYT038-011-01.png"  style="width:700px;height:100px">
+            </td>
+        </tr>
+        <tr>
+          <th>Ours (no attention)</th>
+          <td>
+            <audio controls style="width: 200px;">
+              <source src=no_attn/NYT038-011-01.wav type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+          </td>
+          <td>
+            <img src="no_attn/NYT038-011-01.png"  style="width:700px;height:100px">
+          </td>
+        </tr>
+        <tr>
+          <th>Ours (with attention)</th>
+          <td>
+           <audio controls style="width: 200px;">
+             <source src=attn/NYT038-011-01.wav type="audio/wav">
+             Your browser does not support the audio element.
+           </audio>
+         </td>
+         <td>
+           <img src="attn/NYT038-011-01.png"  style="width:700px;height:100px">
+         </td>
+        </tr>
+      </table>
+
+      </br>
+
+      <table border = "1" class="inlineTable">
+        <col width="50">
+
+        <col width="200">
+
+        <col width="200">
+
+        <col width="200">
+
+        <tr>
+           <th rowspan="4"> 11 </th>
+           <th>Ground Truth</th>
+           <td>
+            <audio controls style="width: 200px;">
+              <source src=gt/NYT040-047-00.wav type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+           </td>
+           <td>
+             <img src="gt/NYT040-047-00.png"  style="width:700px;height:100px">
+           </td>
+        </tr>
+         <tr>
+           <th>Robot (TTS)</th>
+           <td>
+              <audio controls style="width: 200px;">
+                <source src=robot/NYT040-047-00.wav type="audio/wav">
+                Your browser does not support the audio element.
+              </audio>
+            </td>
+            <td>
+              <img src="robot/NYT040-047-00.png"  style="width:700px;height:100px">
+            </td>
+        </tr>
+        <tr>
+          <th>Ours (no attention)</th>
+          <td>
+            <audio controls style="width: 200px;">
+              <source src=no_attn/NYT040-047-00.wav type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+          </td>
+          <td>
+            <img src="no_attn/NYT040-047-00.png"  style="width:700px;height:100px">
+          </td>
+        </tr>
+        <tr>
+          <th>Ours (with attention)</th>
+          <td>
+           <audio controls style="width: 200px;">
+             <source src=attn/NYT040-047-00.wav type="audio/wav">
+             Your browser does not support the audio element.
+           </audio>
+         </td>
+         <td>
+           <img src="attn/NYT040-047-00.png"  style="width:700px;height:100px">
+         </td>
+        </tr>
+      </table>
+
+      </br>
+
+      <table border = "1" class="inlineTable">
+        <col width="50">
+
+        <col width="200">
+
+        <col width="200">
+
+        <col width="200">
+
+        <tr>
+           <th rowspan="4"> 12 </th>
+           <th>Ground Truth</th>
+           <td>
+            <audio controls style="width: 200px;">
+              <source src=gt/NYT127-018-00.wav type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+           </td>
+           <td>
+             <img src="gt/NYT127-018-00.png"  style="width:700px;height:100px">
+           </td>
+        </tr>
+         <tr>
+           <th>Robot (TTS)</th>
+           <td>
+              <audio controls style="width: 200px;">
+                <source src=robot/NYT127-018-00.wav type="audio/wav">
+                Your browser does not support the audio element.
+              </audio>
+            </td>
+            <td>
+              <img src="robot/NYT127-018-00.png"  style="width:700px;height:100px">
+            </td>
+        </tr>
+        <tr>
+          <th>Ours (no attention)</th>
+          <td>
+            <audio controls style="width: 200px;">
+              <source src=no_attn/NYT127-018-00.wav type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+          </td>
+          <td>
+            <img src="no_attn/NYT127-018-00.png"  style="width:700px;height:100px">
+          </td>
+        </tr>
+        <tr>
+          <th>Ours (with attention)</th>
+          <td>
+           <audio controls style="width: 200px;">
+             <source src=attn/NYT127-018-00.wav type="audio/wav">
+             Your browser does not support the audio element.
+           </audio>
+         </td>
+         <td>
+           <img src="attn/NYT127-018-00.png"  style="width:700px;height:100px">
+         </td>
+        </tr>
+      </table>
+    </div>
+
+    <h2>Example for target speaker: LJ </h2>
+    <div>
+      <table border = "1" class="inlineTable">
+        <col width="50">
+
+        <col width="200">
+
+        <col width="200">
+
+        <col width="200">
+
+        <tr>
+           <th rowspan="4"> 13 </th>
+           <th>Ground Truth</th>
+           <td>
+            <audio controls style="width: 200px;">
+              <source src=gt/LJ007-0105.wav type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+           </td>
+           <td>
+             <img src="gt/LJ007-0105.png"  style="width:700px;height:100px">
+           </td>
+        </tr>
+         <tr>
+           <th>Robot (TTS)</th>
+           <td>
+              <audio controls style="width: 200px;">
+                <source src=robot/LJ007-0105.wav type="audio/wav">
+                Your browser does not support the audio element.
+              </audio>
+            </td>
+            <td>
+              <img src="robot/LJ007-0105.png"  style="width:700px;height:100px">
+            </td>
+        </tr>
+        <tr>
+          <th>Ours (no attention)</th>
+          <td>
+            <audio controls style="width: 200px;">
+              <source src=no_attn/LJ007-0105.wav type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+          </td>
+          <td>
+            <img src="no_attn/LJ007-0105.png"  style="width:700px;height:100px">
+          </td>
+        </tr>
+        <tr>
+          <th>Ours (with attention)</th>
+          <td>
+           <audio controls style="width: 200px;">
+             <source src=attn/LJ007-0105.wav type="audio/wav">
+             Your browser does not support the audio element.
+           </audio>
+         </td>
+         <td>
+           <img src="attn/LJ007-0105.png"  style="width:700px;height:100px">
+         </td>
+        </tr>
+      </table>
+
+      </br>
+
+      <table border = "1" class="inlineTable">
+        <col width="50">
+
+        <col width="200">
+
+        <col width="200">
+
+        <col width="200">
+
+        <tr>
+           <th rowspan="4"> 14 </th>
+           <th>Ground Truth</th>
+           <td>
+            <audio controls style="width: 200px;">
+              <source src=gt/LJ007-0105.wav type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+           </td>
+           <td>
+             <img src="gt/LJ007-0105.png"  style="width:700px;height:100px">
+           </td>
+        </tr>
+         <tr>
+           <th>Robot (TTS)</th>
+           <td>
+              <audio controls style="width: 200px;">
+                <source src=robot/LJ012-0064.wav type="audio/wav">
+                Your browser does not support the audio element.
+              </audio>
+            </td>
+            <td>
+              <img src="robot/LJ012-0064.png"  style="width:700px;height:100px">
+            </td>
+        </tr>
+        <tr>
+          <th>Ours (no attention)</th>
+          <td>
+            <audio controls style="width: 200px;">
+              <source src=no_attn/LJ012-0064.wav type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+          </td>
+          <td>
+            <img src="no_attn/LJ012-0064.png"  style="width:700px;height:100px">
+          </td>
+        </tr>
+        <tr>
+          <th>Ours (with attention)</th>
+          <td>
+           <audio controls style="width: 200px;">
+             <source src=attn/LJ012-0064.wav type="audio/wav">
+             Your browser does not support the audio element.
+           </audio>
+         </td>
+         <td>
+           <img src="attn/LJ012-0064.png"  style="width:700px;height:100px">
+         </td>
+        </tr>
+      </table>
+
+      </br>
+
+      <table border = "1" class="inlineTable">
+        <col width="50">
+
+        <col width="200">
+
+        <col width="200">
+
+        <col width="200">
+
+        <tr>
+           <th rowspan="4"> 15 </th>
+           <th>Ground Truth</th>
+           <td>
+            <audio controls style="width: 200px;">
+              <source src=gt/LJ012-0120.wav type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+           </td>
+           <td>
+             <img src="gt/LJ012-0120.png"  style="width:700px;height:100px">
+           </td>
+        </tr>
+         <tr>
+           <th>Robot (TTS)</th>
+           <td>
+              <audio controls style="width: 200px;">
+                <source src=robot/LJ012-0120.wav type="audio/wav">
+                Your browser does not support the audio element.
+              </audio>
+            </td>
+            <td>
+              <img src="robot/LJ012-0120.png"  style="width:700px;height:100px">
+            </td>
+        </tr>
+        <tr>
+          <th>Ours (no attention)</th>
+          <td>
+            <audio controls style="width: 200px;">
+              <source src=no_attn/LJ012-0120.wav type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+          </td>
+          <td>
+            <img src="no_attn/LJ012-0120.png"  style="width:700px;height:100px">
+          </td>
+        </tr>
+        <tr>
+          <th>Ours (with attention)</th>
+          <td>
+           <audio controls style="width: 200px;">
+             <source src=attn/LJ012-0120.wav type="audio/wav">
+             Your browser does not support the audio element.
+           </audio>
+         </td>
+         <td>
+           <img src="attn/LJ012-0120.png"  style="width:700px;height:100px">
+         </td>
+        </tr>
+      </table>
+   </div>
+  </body>
+</html>
